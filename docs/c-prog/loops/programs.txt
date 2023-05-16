@@ -1,0 +1,59 @@
+
+
+# program - 1
+
+int i;
+for (i = 1; i <= 3; i++)
+{
+    printf("%d\n", i);
+}
+
+# program - 2
+
+int i;
+for (i = 0; i < 5; i++)
+{
+    printf("%d\n", i*i);
+}
+
+# program - 3
+
+int i;
+for (i = 5; i > 0; i--)
+{
+    printf("%d\n", i*i);
+}
+
+
+# program - 4
+
+int i = 0;
+while (i < 3)
+{
+    printf("%d\n", i);
+    i++;
+}
+
+
+# program - 5
+
+#include <stdio.h>
+
+int i = 0;
+do 
+{
+    printf("%d\n", i);
+    i++;
+} while (i < 3);
+
+
+# program - 6
+
+
+int i = 1, sum = 0;
+while (sum < 16)
+{
+    sum += i;
+    i++;
+}
+printf("Sum: %d, i: %d\n", sum, i);
