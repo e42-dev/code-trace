@@ -6,3 +6,4 @@
 [03](c-prog/loops/03/)  
 [04](c-prog/loops/04/)  
 [05](c-prog/loops/05/)  
+[06](c-prog/loops/06/)  
