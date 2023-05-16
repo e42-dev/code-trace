@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C loops 03</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-loops-walkthrough-03' id='c-loops-walkthrough-03'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01   int i;
+02   for (i = 5; i > 0; i--)
+03   {
+04       printf("%d\n", i*i);
+05   }
+06
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>i</th>
+<th>output</th>
+
+              </tr>
+            </table>
+              <script type='text/javascript'>//<![CDATA[
+e42_walkthrough.setup.push([
+  {variable: "i", line: 2, answer: 5},
+  {variable: "output", line: 4, answer: 25},
+  {variable: "i", line: 2, answer: 4},
+  {variable: "output", line: 4, answer: 16},
+  {variable: "i", line: 2, answer: 3},
+  {variable: "output", line: 4, answer: 9},
+  {variable: "i", line: 2, answer: 2},
+  {variable: "output", line: 4, answer: 4},
+  {variable: "i", line: 2, answer: 1},
+  {gotoline: 4, line: 2 },
+  {variable: "output", line: 4, answer: 1},
+  {variable: "i", line: 2, answer: 0},
+  {gotoline: 6, line: 2},
+  {line: 6}
+])
+              //]]> </script> 
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>
