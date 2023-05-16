@@ -9,8 +9,8 @@ c-loops-walkthrough-05
 explaination:
 Walk-through the sample code.
 
-program:
 
+program:
 01   int i = 0;
 02   do
 03   {

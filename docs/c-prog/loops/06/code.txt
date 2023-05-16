@@ -1,0 +1,7 @@
+int i = 1, sum = 0;
+while (sum < 16)
+{
+    sum += i;
+    i++;
+}
+printf("Sum: %d, i: %d", sum, i);

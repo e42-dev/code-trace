@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C loops 06</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-loops-walkthrough-06' id='c-loops-walkthrough-06'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01   int i = 1, sum = 0;
+02   while (sum < 16)
+03   {
+04       sum += i;
+05       i++;
+06   }
+07   printf("Sum:%d, i:%d", sum, i);
+08
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>i</th>
+<th>sum</th>
+<th>output</th>
+
+              </tr>
+            </table>
+              <script type='text/javascript'>//<![CDATA[
+e42_walkthrough.setup.push([
+  {variable: "i", line: 1, answer: 1},
+  {variable: "sum", line: 1, answer: 0},
+  {variable: "sum", line: 4, answer: 1},
+  {variable: "i", line: 5, answer: 2},
+  {variable: "sum", line: 4, answer: 3},
+  {variable: "i", line: 5, answer: 3},
+  {variable: "sum", line: 4, answer: 6},
+  {variable: "i", line: 5, answer: 4},
+  {variable: "sum", line: 4, answer: 10},
+  {variable: "i", line: 5, answer: 5},
+  {variable: "sum", line: 4, answer: 15},
+  {variable: "i", line: 5, answer: 6},
+  {gotoline: 4, line: 2},
+  {variable: "sum", line: 4, answer: 21},
+  {variable: "i", line: 5, answer: 7},
+  {gotoline: 7, line: 2},
+  {variable: "output", line: 7, answer: "Sum:21, i:7"},
+  {line: 8}
+  
+])
+              //]]> </script> 
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>

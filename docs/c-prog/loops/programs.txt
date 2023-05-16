@@ -56,4 +56,4 @@ while (sum < 16)
     sum += i;
     i++;
 }
-printf("Sum: %d, i: %d\n", sum, i);
+printf("Sum:%d, i:%d", sum, i);
