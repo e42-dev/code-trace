@@ -1,0 +1,40 @@
+title:
+Walk-through C variable and operators 09
+
+
+id:
+c-variable-operators-walkthrough-09
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01 #include "భవిష్యత్తులో.నేను"   
+02
+03 START
+04
+05   sankya a;
+06   sankya b;
+07   a = 5;
+08   b = 7;
+09   a = b;
+10   b = a;
+11
+12 STOP
+13
+
+
+trace_variables:
+a b
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "a", line: 7, answer: 5},
+  {variable: "b", line: 8, answer: 7},
+  {variable: "a", line: 9, answer: 7},
+  {variable: "b", line: 10, answer: 7},
+  {line: 12}
+])

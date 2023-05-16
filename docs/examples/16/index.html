@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C functions 16</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-functions-walkthrough-16' id='c-functions-walkthrough-16'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01   #include "భవిష్యత్తులో.నేను"
+02   
+03   sankya compute_square(sankya num);
+04   
+05   START
+06   
+07     sankya a;
+08     a = compute_square(2);
+09     a = compute_square(a);
+10   
+11   STOP
+12   
+13   sankya compute_square(sankya num)
+14   {
+15     sankya result;
+16     result = num * num;
+17     return result;
+18   }
+19
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>a</th>
+<th>num</th>
+<th>result</th>
+
+              </tr>
+            </table>
+              <script type='text/javascript'>//<![CDATA[
+e42_walkthrough.setup.push([
+  {gotoline: 14, line: 8},
+  {variable: "num", line: 14, answer: 2},
+  {variable: "result", line: 16, answer: 4},
+  {gotoline: 8, line: 17},
+  {variable: "a", line: 8, answer: 4},
+  {gotoline: 14, line: 9},
+  {variable: "num", line: 14, answer: 4},
+  {variable: "result", line: 16, answer: 16},
+  {gotoline: 9, line: 17},
+  {variable: "a", line: 9, answer: 16},
+  {line:11}
+])
+              //]]> </script> 
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+#include "భవిష్యత్తులో.నేను"
+
+sankya compute_square(sankya num);
+
+START
+
+  sankya a;
+  a = compute_square(2);
+  a = compute_square(a);
+
+STOP
+
+sankya compute_square(sankya num)
+{
+  sankya result;
+  result = num * num;
+  return result;
+}

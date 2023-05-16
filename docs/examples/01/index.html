@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C variable and operators 01</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-variable-operators-walkthrough-01' id='c-variable-operators-walkthrough-01'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01 #include "భవిష్యత్తులో.నేను"   
+02
+03 START
+04
+05   sankya age;
+06   age = 21;
+07   age = age + 10;
+08   type_the_number(age);
+09
+10 STOP
+11
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>age</th>
+<th>Output</th>
+
+              </tr>
+            </table>
+            <script>
+e42_walkthrough.setup.push([
+  {variable: "age", line: 6, answer: 21},
+  {variable: "age", line: 7, answer: 31},
+  {variable: "Output", line: 8, answer: 31},
+  {line:10}
+])
+              </script>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>
