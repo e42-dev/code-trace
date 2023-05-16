@@ -1,0 +1,42 @@
+title:
+Walk-through C loops 02
+
+
+id:
+c-loops-walkthrough-02
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01   int i;
+02   for (i = 0; i < 5; i++)
+03   {
+04       printf("%d\n", i*i);
+05   }
+06
+
+
+trace_variables:
+i output
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "i", line: 2, answer: 0},
+  {variable: "output", line: 4, answer: 0},
+  {variable: "i", line: 2, answer: 1},
+  {variable: "output", line: 4, answer: 1},
+  {variable: "i", line: 2, answer: 2},
+  {variable: "output", line: 4, answer: 4},
+  {variable: "i", line: 2, answer: 3},
+  {variable: "output", line: 4, answer: 9},
+  {variable: "i", line: 2, answer: 4},
+  {gotoline: 4, line: 2 },
+  {variable: "output", line: 4, answer: 16},
+  {variable: "i", line: 2, answer: 5},
+  {gotoline: 6, line: 2},
+  {line: 6}
+])
