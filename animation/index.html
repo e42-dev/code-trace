@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/tokyo-night-dark.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <div class="container">
+     <h1> Hello World </h1>
+     <pre>
+        <code class="language-c">
+            01 #include < stdio.h >
+            02 int main()
+            {
+                printf("Hello World");
+                return 0;
+            }
+        </code>
+     </pre>
+
+    <button  onclick="start()" >Click</button>
+   </div>
+    <script src="./confetti.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+
+    <script>
+       hljs.highlightAll();
+       const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 100); 
+            stop();
+        };
+
+
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+    
+       
+    </script>
+    
+       
+
+
+</body>
+</html>
