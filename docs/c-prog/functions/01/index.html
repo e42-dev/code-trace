@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through C functions 01</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-functions-walkthrough-01' id='c-functions-walkthrough-01'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through the sample code.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+01   #include&lt;stdio.h&gt;
+02   
+03   int cube(int n);
+04   int sum_of_cubes(int num1,
+05                    int num2);
+06   int main()
+07   {
+08       int total;
+09       total = sum_of_cubes(2, 3);
+10       printf("Sum of cubes of %i and %i is %i.\n", 2, 3, total);
+11       return 0;
+12   }
+13
+14   int cube(int n)
+15   {
+16       int result;
+17       result = n*n*n;
+18       return result;
+19   }
+20
+21   int sum_of_cubes(int num1,
+22                    int num2)
+23   {
+24       int sum;
+25       sum = cube(num1);
+26       sum = sum + cube(num2);
+27       return sum;
+28   }
+29
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th>num1</th>
+<th>num2</th>
+<th>n</th>
+<th>result</th>
+<th>sum</th>
+<th>total</th>
+
+              </tr>
+            </table>
+              <script type='text/javascript'>//<![CDATA[
+e42_walkthrough.setup.push([
+  {gotoline: 23, line: 9},
+  {variable: "num1", line: 23, answer: 2},
+  {variable: "num2", line: 23, answer: 3},
+  {gotoline: 15, line: 25},
+  {variable: "n", line: 15, answer: 2},
+  {variable: "result", line: 17, answer: 8},
+  {gotoline: 25, line: 18},
+  {variable: "sum", line: 25, answer: 8},
+  {gotoline: 15, line: 26},
+  {variable: "n", line: 15, answer: 3},
+  {variable: "result", line: 17, answer: 27},
+  {gotoline: 26, line: 18},
+  {variable: "sum", line: 26, answer: 35},
+  {gotoline: 9, line: 27},
+  {variable: "total", line: 9, answer: 35},
+  {line: 11}
+
+])
+              //]]> </script> 
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>

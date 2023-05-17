@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int cube(int n);
+int sum_of_cubes(int num1,
+                 int num2);
+int main()
+{
+    int total;
+    total = sum_of_cubes(2, 3);
+    printf("Sum of cubes of %i and %i is %i.\n", 2, 3, total);
+    return 0;
+}
+
+int cube(int n)
+{
+    int result;
+    result = n*n*n;
+    return result;
+}
+
+int sum_of_cubes(int num1,
+                 int num2)
+{
+    int sum;
+    sum = cube(num1);
+    sum = sum + cube(num2);
+    return sum;
+}
