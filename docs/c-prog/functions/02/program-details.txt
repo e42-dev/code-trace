@@ -1,0 +1,53 @@
+title:
+Walk-through C functions 02
+
+
+id:
+c-functions-walkthrough-02
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01   #include&lt;stdio.h&gt;
+02   
+03   int n;
+04   
+05   void magic(int k);
+06   
+07   int main()
+08   {
+09       n = 5;
+10       magic(3);
+11       printf("%i", n);
+12       return 0;
+13   }
+14
+15   void magic(int k)
+16   {
+17       int n;
+18       k = k*k;
+19       n = k%3;
+20       printf("%i", n);
+21   }
+22
+
+trace_variables:
+Global-n k Local-n Output
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {variable: "Global-n", line: 9, answer: 5},
+  {gotoline: 16, line: 10},
+  {variable: "k", line: 16, answer: 3},
+  {variable: "k", line: 18, answer: 9},
+  {variable: "Local-n", line: 19, answer: 0},
+  {variable: "Output", line: 20, answer: 0},
+  {gotoline: 11, line: 20},
+  {variable: "Output", line: 11, answer: 5},
+  {line: 12}
+
+])
