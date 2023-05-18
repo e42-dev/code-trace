@@ -11,3 +11,6 @@
 ## Functions
 [01](c-prog/functions/01/)  
 [02](c-prog/functions/02/)  
+
+## Arrays
+[01](c-prog/arrays/01/)  

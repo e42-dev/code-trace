@@ -1,0 +1,82 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Interactivities</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+     }
+    </style>
+  </head> 
+  <body>
+   <ol class='interactivities' id='interactivities'>
+<li title='ebook-bc-3-ch06-sec01-exampletable-1' id='ebook-bc-3-ch06-sec01-exampletable-1'><div class='hc-included'>
+<div>
+  <p>Provide code to carry out the following tasks.</p> 
+  <div class='e42_exampletable'>
+    <table>
+      <tr>
+        <th>Task</th> 
+        <th>Code</th> 
+        <th>Explanation</th> 
+      </tr> 
+      <tr>
+        <td>Define an array of integers called <code>values</code> that can hold 99 elements.</td> 
+        <td><code>int values[99];</code></td> 
+        <td>This array has elements <code>values[0]</code> . . . <code>values[98]</code>.</td> 
+      </tr>
+      <tr><td>Place 100 into the last element of <code>values</code>.</td>
+        <td><code>values[98] = 100;</code></td>
+        <td>The last element has index 98 because the array has length 99.</td>
+      </tr>
+      <tr>
+        <td>Define an array of integers called <code>a</code> that holds the numbers 2, 3, 5, and 7.</td> 
+        <td><code>int a[] = { 2, 3, 5, 7 };</code></td> 
+        <td>You can omit the array length when you supply initial values.</td> 
+      </tr> 
+      <tr>
+        <td>What are the contents of the array <code>a</code> you just defined after this loop executes?
+          <pre>for (int i = 0; i &lt; 3; i++)
+{
+   a[i]++;
+}</pre></td>
+        <td>3 4 6 7</td>
+        <td>Note that the last element was not incremented.</td>
+      </tr> 
+      <tr>
+        <td>What are the contents of <code>a</code> after this loop executes?
+          <pre>for (int i = 0; i &lt; 2; i++)
+{
+   a[3 - i] = a[i];
+}</pre></td> 
+        <td>3 4 4 3</td> 
+        <td>The loop carried out two assignments: <code>a[3] = a[0]</code> and <code>a[2] = a[1]</code>.</td> 
+      </tr> 
+    </table>
+    <script type='text/javascript'>//<![CDATA[
+				e42_exampletable.setup.push([
+/\s*int\s+values\s*\[\s*99\s*\]\s*;?\s*/,
+/\s*values\s*\[\s*98\s*\]\s*=\s*100\s*;?\s*/,
+/\s*int\s+a\s*\[\s*\]\s*=\s*\{\s*2\s*,\s*3\s*,\s*5\s*,\s*7\s*\}\s*;?\s*/,
+/\s*3\s*,\s*4,\s*6,\s*7\s*/,
+/\s*3\s*,\s*4,\s*4,\s*3\s*/,
+])
+   //]]>
+    </script> 
+  </div> 
+</div>
+</div></li>
+</ol>
+  <div class='vstreport'></div>
+</body></html>
