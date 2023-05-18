@@ -36,35 +36,32 @@
             <div class='e42_walkthrough'>
               <pre>
 01   #include&lt;stdio.h&gt;
-02   
+02
 03   int cube(int n);
 04   int sum_of_cubes(int num1,
 05                    int num2);
 06   int main()
 07   {
-08       int total;
-09       total = sum_of_cubes(2, 3);
-10       printf("Sum of cubes of %i and %i is %i.\n", 2, 3, total);
-11       return 0;
-12   }
-13
-14   int cube(int n)
-15   {
-16       int result;
-17       result = n*n*n;
-18       return result;
-19   }
-20
-21   int sum_of_cubes(int num1,
-22                    int num2)
-23   {
-24       int sum;
-25       sum = cube(num1);
-26       sum = sum + cube(num2);
-27       return sum;
-28   }
-29
-
+08       printf("%i",sum_of_cubes(2,3));
+09       return 0;
+10   }
+11
+12   int cube(int n)
+13   {
+14       int result;
+15       result = n*n*n;
+16       return result;
+17   }
+18
+19   int sum_of_cubes(int num1,
+20                    int num2)
+21   {
+22       int sum;
+23       sum = cube(num1);
+24       sum = sum + cube(num2);
+25       return sum;
+26   }
+27
             </pre>
             <table style="font-size:x-large">
               <tr>
@@ -73,28 +70,28 @@
 <th>n</th>
 <th>result</th>
 <th>sum</th>
-<th>total</th>
+<th>output</th>
 
               </tr>
             </table>
               <script type='text/javascript'>//<![CDATA[
 e42_walkthrough.setup.push([
-  {gotoline: 23, line: 9},
-  {variable: "num1", line: 23, answer: 2},
-  {variable: "num2", line: 23, answer: 3},
-  {gotoline: 15, line: 25},
-  {variable: "n", line: 15, answer: 2},
-  {variable: "result", line: 17, answer: 8},
-  {gotoline: 25, line: 18},
-  {variable: "sum", line: 25, answer: 8},
-  {gotoline: 15, line: 26},
-  {variable: "n", line: 15, answer: 3},
-  {variable: "result", line: 17, answer: 27},
-  {gotoline: 26, line: 18},
-  {variable: "sum", line: 26, answer: 35},
-  {gotoline: 9, line: 27},
-  {variable: "total", line: 9, answer: 35},
-  {line: 11}
+  {gotoline: 21, line: 8},
+  {variable: "num1", line: 21, answer: 2},
+  {variable: "num2", line: 21, answer: 3},
+  {gotoline: 13, line: 23},
+  {variable: "n", line: 13, answer: 2},
+  {variable: "result", line: 15, answer: 8},
+  {gotoline: 23, line: 16},
+  {variable: "sum", line: 23, answer: 8},
+  {gotoline: 13, line: 24},
+  {variable: "n", line: 13, answer: 3},
+  {variable: "result", line: 15, answer: 27},
+  {gotoline: 24, line: 16},
+  {variable: "sum", line: 24, answer: 35},
+  {gotoline: 8, line: 25},
+  {variable: "output", line: 8, answer: "35"},
+  {line: 9}
 
 ])
               //]]> </script> 
