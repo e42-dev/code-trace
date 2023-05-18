@@ -5,7 +5,7 @@ int sum_of_cubes(int num1,
                  int num2);
 int main()
 {
-    printf("%i",sum_of_cubes(2,3));
+    printf("%i", sum_of_cubes(2, 3));
     return 0;
 }
 
