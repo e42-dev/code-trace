@@ -1,0 +1,65 @@
+title:
+Walk-through C functions 01
+
+
+id:
+c-functions-walkthrough-01
+
+
+explaination:
+Walk-through the sample code.
+
+
+program:
+01   #include&lt;stdio.h&gt;
+02
+03   int cube(int n);
+04   int sum_of_cubes(int num1,
+05                    int num2);
+06   int main()
+07   {
+08       printf("%i", sum_of_cubes(2, 3));
+09       return 0;
+10   }
+11
+12   int cube(int n)
+13   {
+14       int result;
+15       result = n*n*n;
+16       return result;
+17   }
+18
+19   int sum_of_cubes(int num1,
+20                    int num2)
+21   {
+22       int sum;
+23       sum = cube(num1);
+24       sum = sum + cube(num2);
+25       return sum;
+26   }
+27
+
+trace_variables:
+num1 num2 n result sum output
+
+
+walkthrough:
+e42_walkthrough.setup.push([
+  {gotoline: 21, line: 8},
+  {variable: "num1", line: 21, answer: 2},
+  {variable: "num2", line: 21, answer: 3},
+  {gotoline: 13, line: 23},
+  {variable: "n", line: 13, answer: 2},
+  {variable: "result", line: 15, answer: 8},
+  {gotoline: 23, line: 16},
+  {variable: "sum", line: 23, answer: 8},
+  {gotoline: 13, line: 24},
+  {variable: "n", line: 13, answer: 3},
+  {variable: "result", line: 15, answer: 27},
+  {gotoline: 24, line: 16},
+  {variable: "sum", line: 24, answer: 35},
+  {gotoline: 8, line: 25},
+  {variable: "output", line: 8, answer: "35"},
+  {line: 9}
+
+])
