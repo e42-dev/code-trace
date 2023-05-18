@@ -18,7 +18,7 @@ program:
 05                    int num2);
 06   int main()
 07   {
-08       printf("%i",sum_of_cubes(2,3));
+08       printf("%i", sum_of_cubes(2, 3));
 09       return 0;
 10   }
 11
