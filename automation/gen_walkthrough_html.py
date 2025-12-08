@@ -67,7 +67,7 @@ variables_html = ""
 for variable in variables_list:
   variables_html += "<th>" + variable + "</th>\n"
 
-html = html_template_part_1.format(title=title, js_loc="https://e42.dev/c/assets/scripts/e42_all_min.js", css_loc="https://e42.dev/c/assets/css/e42_all_min.css")
+html = html_template_part_1.format(title=title, js_loc="https://e42-dev.github.io/c/assets/scripts/e42_all_min.js", css_loc="https://e42-dev.github.io/c/assets/css/e42_all_min.css")
 html = html + html_template_part_2
 html = html + html_template_part_3.format(walkthrough_id= walkthrough_id, explaination=explaination, code=code, variables=variables_html, walkthrough=walkthrough)
 

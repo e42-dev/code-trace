@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int n;
+
+void magic(int k);
+
+int main()
+{
+    n = 5;    
+    printf("%i", n);
+    magic(3);
+    printf("%i", n);
+    return 0;
+}
+
+void magic(int k)
+{
+    int n;
+    k = k*k;
+    n = k%3;
+    printf("%i", n);
+}
